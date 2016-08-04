@@ -1,0 +1,49 @@
+{
+  "name": "home-automation-push",
+  "private": true,
+  "author": "Oron Nadiv <oron@nadiv.us> (https://github.com/OronNadiv/)",
+  "homepage": "https://github.com/OronNadiv/home-automation-push/",
+  "bugs": "https://github.com/OronNadiv/home-automation-push/issues",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/OronNadiv/home-automation-push.git"
+  },
+  "license": "AGPL-3.0",
+  "engines": {
+    "node": "^6",
+    "npm": "^3"
+  },
+  "scripts": {
+    "cover": "istanbul cover _mocha -- --recursive -t 10000",
+    "lint": "eslint .",
+    "start": "node src/app.js",
+    "test": "mocha --recursive -t 10000 && npm run lint"
+  },
+  "dependencies": {
+    "bluebird": "^3",
+    "cors": "^2",
+    "diehard": "^1",
+    "express": ">=4.5 <5",
+    "jsonwebtoken": "^7",
+    "redis": "^2",
+    "redis-url": "^1",
+    "socket.io": "^1",
+    "socket.io-redis": "^1",
+    "socketio-jwt": "^4",
+    "underscore.string": "^3",
+    "winston": "^2"
+  },
+  "devDependencies": {
+    "chance": "^1",
+    "coveralls": "^2",
+    "eslint": "^3",
+    "eslint-config-standard": "^5",
+    "eslint-plugin-promise": "^2",
+    "eslint-plugin-standard": "^2",
+    "istanbul": "^0.4",
+    "mocha": "^3",
+    "should": "^10",
+    "supertest": "^2",
+    "supertest-as-promised": "^3"
+  }
+}
