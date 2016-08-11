@@ -1,9 +1,6 @@
-const path = require('path')
-const LOG_PREFIX = `"${path.basename(__filename)}":`
-const log = require('../logger')
-const verbose = log.verbose.bind(log, LOG_PREFIX)
-const warn = log.warn.bind(log, LOG_PREFIX)
-const error = log.error.bind(log, LOG_PREFIX)
+const verbose = require('debug')('ha:initializations:socket-io:verbose')
+const warn = require('debug')('ha:initializations:socket-io:warn')
+const error = require('debug')('ha:initializations:socket-io:error')
 
 const {createClient} = require('redis')
 const {parse} = require('redis-url')
