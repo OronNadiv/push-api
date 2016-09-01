@@ -1,6 +1,5 @@
-# Home Automation - Push Backend API
-This server manages the push notifications using [Socket-IO][socket-io].
-The server also takes adventage of [Redis][redis]'s pub-sub mechanism in order to support multiple servers for scaling.
+# Home Automation - Push API
+Back-end server that handles [Socket-IO][socket-io] communication between the clients and the other API servers. It uses [Redis][redis]'s Pub-Sub mechanism for scalability and distributes architecture.
 
 [![JavaScript Style Guide][standard-image]][standard-url]
 [![Dependencies][dependencies-image]][dependencies-url]
