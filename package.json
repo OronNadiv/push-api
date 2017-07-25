@@ -28,8 +28,8 @@
     "jsonwebtoken": "^7",
     "redis": "^2",
     "redis-url": "^1",
-    "socket.io": "^2",
-    "socket.io-redis": "^5",
+    "socket.io": "^1",
+    "socket.io-redis": "^1",
     "socketio-jwt": "^4",
     "underscore.string": "^3"
   },
