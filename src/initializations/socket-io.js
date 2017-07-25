@@ -36,9 +36,10 @@ module.exports = server => {
           socket
             .on('authenticated', socket => {
               try {
-                verbose('authorized called. token:', !!token)
-
+                verbose('authorized called.')
                 const token = socket.decoded_token
+                verbose('token:', !!token)
+
                 const namespace = socket.nsp.name
                 const expectedNamespace = `/${token.group_id}${suffix}`
 
