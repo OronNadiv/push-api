@@ -1,11 +1,11 @@
+#### DEPRECATED.  Using [PubNub][pubnub] for push notifications.  
+
 # Home Automation - Push API
 Back-end server that handles [Socket-IO][socket-io] communication between the clients and the other API servers. It uses [Redis][redis]'s Pub-Sub mechanism for scalability and distributes architecture.
 
 [![JavaScript Style Guide][standard-image]][standard-url]
 [![Dependencies][dependencies-image]][dependencies-url]
 [![DevDependencies][dependencies-dev-image]][dependencies-dev-url]
-[![Build Status][travis-image]][travis-url]
-[![Test Coverage][coveralls-image]][coveralls-url]
 
 I suggest you first [read][overview-url] about the different components of the home automation application.  
 This will help you understand better the general architecture and different functions of the system.
