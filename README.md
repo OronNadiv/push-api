@@ -1,11 +1,9 @@
-#### DEPRECATED.  Using [PubNub][pubnub] for push notifications.  
+#### DEPRECATED.  Using [PubNub][pubnub-url] for push notifications.  
 
 # Home Automation - Push API
 Back-end server that handles [Socket-IO][socket-io] communication between the clients and the other API servers. It uses [Redis][redis]'s Pub-Sub mechanism for scalability and distributes architecture.
 
 [![JavaScript Style Guide][standard-image]][standard-url]
-[![Dependencies][dependencies-image]][dependencies-url]
-[![DevDependencies][dependencies-dev-image]][dependencies-dev-url]
 
 I suggest you first [read][overview-url] about the different components of the home automation application.  
 This will help you understand better the general architecture and different functions of the system.
@@ -39,7 +37,7 @@ __UI\_URL__ (required): url to the [UI][ui-url] server. Default: if NODE_ENV = `
 
 [redis]: http://redis.io
 [socket-io]: http://socket.io
-
+[pubnub-url]: https://pubnub.com
 [overview-url]: https://oronnadiv.github.io/home-automation
 [client-installation-instruction-url]: https://oronnadiv.github.io/home-automation/#installation-instructions-for-the-raspberry-pi-clients
 [server-installation-instruction-url]: https://oronnadiv.github.io/home-automation/#installation-instructions-for-the-server-micro-services
